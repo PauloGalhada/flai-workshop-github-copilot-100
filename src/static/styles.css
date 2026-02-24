@@ -137,11 +137,25 @@ section h3 {
   padding: 3px 12px;
 }
 
-.participants-list li::before {
-  content: "\2022";
-  color: #3949ab;
-  font-weight: bold;
-  margin-right: 8px;
+.participants-list li {
+  justify-content: space-between;
+}
+
+.unregister-btn {
+  background: none;
+  border: none;
+  padding: 0 0 0 6px;
+  font-size: 0.95em;
+  cursor: pointer;
+  color: #c62828;
+  line-height: 1;
+  flex-shrink: 0;
+  transition: color 0.15s;
+}
+
+.unregister-btn:hover {
+  color: #b71c1c;
+  background: none;
 }
 
 .no-participants {
